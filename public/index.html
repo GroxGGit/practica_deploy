@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lienzo: inspiración para artistas</title>
+  <meta name="description" content="Estilos, vibras, paletas de color y técnicas para encontrar tu próxima idea.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Filtros: funcionan solo con HTML y CSS -->
+  <input type="radio" name="filtro" id="f-todo" checked>
+  <input type="radio" name="filtro" id="f-estilos">
+  <input type="radio" name="filtro" id="f-vibras">
+  <input type="radio" name="filtro" id="f-paletas">
+  <input type="radio" name="filtro" id="f-tecnicas">
+
+  <header class="barra">
+    <a class="logo" href="#">Lienzo</a>
+    <form class="buscador" role="search" onsubmit="return false">
+      <label class="sr" for="buscar">Buscar inspiración</label>
+      <input id="buscar" type="search" placeholder="Busca un estilo, una vibra o una paleta">
+    </form>
+  </header>
+
+  <section class="intro">
+    <h1>Encuentra tu próxima idea</h1>
+    <p>Estilos, vibras, paletas y técnicas reunidos en un solo lugar para cuando el lienzo está en blanco.</p>
+
+    <nav class="filtros" aria-label="Categorías">
+      <label for="f-todo">Todo</label>
+      <label for="f-estilos">Estilos</label>
+      <label for="f-vibras">Vibras</label>
+      <label for="f-paletas">Paletas</label>
+      <label for="f-tecnicas">Técnicas</label>
+    </nav>
+  </section>
+
+  <main class="muro">
+
+    <!-- ESTILOS -->
+    <article class="pin" data-cat="estilos">
+      <div class="arte arte-surreal alto-3" role="img" aria-label="Formas flotantes sobre un cielo de atardecer"></div>
+      <div class="info">
+        <h2>Surrealismo onírico</h2>
+        <p>Objetos que flotan, escalas imposibles y paisajes de sueño.</p>
+        <span class="etiqueta">Estilo</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="paletas">
+      <div class="muestras alto-2" role="img" aria-label="Paleta de azules profundos">
+        <span style="--c:#0b2545"><b>#0B2545</b></span>
+        <span style="--c:#13315c"><b>#13315C</b></span>
+        <span style="--c:#134074"><b>#134074</b></span>
+        <span style="--c:#8da9c4"><b>#8DA9C4</b></span>
+        <span style="--c:#eef4ed"><b>#EEF4ED</b></span>
+      </div>
+      <div class="info">
+        <h2>Océano profundo</h2>
+        <p>Azules que van de la noche marina a la espuma.</p>
+        <span class="etiqueta">Paleta</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="vibras">
+      <div class="arte arte-verano alto-2" role="img" aria-label="Sol grande sobre un horizonte cálido"></div>
+      <div class="info">
+        <h2>Nostalgia de verano</h2>
+        <p>Luz dorada, tardes largas y recuerdos con grano de película.</p>
+        <span class="etiqueta">Vibra</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="tecnicas">
+      <div class="arte arte-acuarela alto-3" role="img" aria-label="Manchas de color que se mezclan como acuarela"></div>
+      <div class="info">
+        <h2>Acuarela húmeda</h2>
+        <p>Moja el papel primero y deja que los colores se mezclen solos.</p>
+        <span class="etiqueta">Técnica</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="estilos">
+      <div class="arte arte-minimal alto-2" role="img" aria-label="Círculo, cuadrado y línea sobre fondo liso"></div>
+      <div class="info">
+        <h2>Minimalismo geométrico</h2>
+        <p>Pocas formas, mucho espacio y un solo punto focal.</p>
+        <span class="etiqueta">Estilo</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="vibras">
+      <div class="arte arte-cyber alto-3" role="img" aria-label="Rayas de neón sobre fondo oscuro"></div>
+      <div class="info">
+        <h2>Cyberpunk nocturno</h2>
+        <p>Neón sobre asfalto mojado, ciudades que nunca duermen.</p>
+        <span class="etiqueta">Vibra</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="paletas">
+      <div class="muestras alto-3" role="img" aria-label="Paleta dulce de frutas">
+        <span style="--c:#ff6b6b"><b>#FF6B6B</b></span>
+        <span style="--c:#ffa94d"><b>#FFA94D</b></span>
+        <span style="--c:#ffe066"><b>#FFE066</b></span>
+        <span style="--c:#b2f2bb"><b>#B2F2BB</b></span>
+        <span style="--c:#74c0fc"><b>#74C0FC</b></span>
+        <span style="--c:#b197fc"><b>#B197FC</b></span>
+      </div>
+      <div class="info">
+        <h2>Dulce de frutas</h2>
+        <p>Colores vivos y jugosos para ilustración infantil o pop.</p>
+        <span class="etiqueta">Paleta</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="tecnicas">
+      <div class="arte arte-risografia alto-2" role="img" aria-label="Puntos de dos tintas superpuestas"></div>
+      <div class="info">
+        <h2>Grano de risografía</h2>
+        <p>Dos o tres tintas, trama de puntos y capas que se cruzan.</p>
+        <span class="etiqueta">Técnica</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="estilos">
+      <div class="arte arte-botanico alto-3" role="img" aria-label="Hojas estilizadas sobre fondo claro"></div>
+      <div class="info">
+        <h2>Ilustración botánica</h2>
+        <p>Hojas y flores con detalle, como un cuaderno de naturalista.</p>
+        <span class="etiqueta">Estilo</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="vibras">
+      <div class="arte arte-cozy alto-2" role="img" aria-label="Tonos cálidos de una tarde de invierno"></div>
+      <div class="info">
+        <h2>Cozy de invierno</h2>
+        <p>Cobijas, té caliente y luz amarilla tras la ventana.</p>
+        <span class="etiqueta">Vibra</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="paletas">
+      <div class="muestras alto-2" role="img" aria-label="Paleta de tierra y barro">
+        <span style="--c:#6f4e37"><b>#6F4E37</b></span>
+        <span style="--c:#a47148"><b>#A47148</b></span>
+        <span style="--c:#d4a373"><b>#D4A373</b></span>
+        <span style="--c:#e9d8a6"><b>#E9D8A6</b></span>
+        <span style="--c:#606c38"><b>#606C38</b></span>
+      </div>
+      <div class="info">
+        <h2>Tierra y barro</h2>
+        <p>Marrones cálidos con un verde musgo que los equilibra.</p>
+        <span class="etiqueta">Paleta</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="estilos">
+      <div class="arte arte-pop alto-2" role="img" aria-label="Círculos de colores primarios con borde grueso"></div>
+      <div class="info">
+        <h2>Pop art</h2>
+        <p>Colores primarios, contornos gruesos y trama de puntos.</p>
+        <span class="etiqueta">Estilo</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="tecnicas">
+      <div class="arte arte-collage alto-3" role="img" aria-label="Recortes de papel de colores superpuestos"></div>
+      <div class="info">
+        <h2>Collage de papel</h2>
+        <p>Recorta, rasga y superpone texturas para crear profundidad.</p>
+        <span class="etiqueta">Técnica</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="vibras">
+      <div class="arte arte-bosque alto-3" role="img" aria-label="Siluetas de árboles entre la niebla"></div>
+      <div class="info">
+        <h2>Calma de bosque</h2>
+        <p>Niebla, verdes apagados y una sensación de silencio.</p>
+        <span class="etiqueta">Vibra</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="paletas">
+      <div class="muestras alto-2" role="img" aria-label="Paleta pastel con acentos de neón">
+        <span style="--c:#ffd6e8"><b>#FFD6E8</b></span>
+        <span style="--c:#d0f4de"><b>#D0F4DE</b></span>
+        <span style="--c:#c8d7ff"><b>#C8D7FF</b></span>
+        <span style="--c:#fff3b0"><b>#FFF3B0</b></span>
+        <span style="--c:#ff3cac"><b>#FF3CAC</b></span>
+      </div>
+      <div class="info">
+        <h2>Pastel con neón</h2>
+        <p>Tonos suaves con un solo acento eléctrico que roba la atención.</p>
+        <span class="etiqueta">Paleta</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="estilos">
+      <div class="arte arte-nouveau alto-2" role="img" aria-label="Líneas curvas y flores estilizadas"></div>
+      <div class="info">
+        <h2>Art nouveau</h2>
+        <p>Líneas fluidas, flores estilizadas y marcos ornamentales.</p>
+        <span class="etiqueta">Estilo</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="tecnicas">
+      <div class="arte arte-carbon alto-2" role="img" aria-label="Trazos grises sobre papel claro"></div>
+      <div class="info">
+        <h2>Trazo de carboncillo</h2>
+        <p>Contrastes fuertes, manchas con el dedo y gestos rápidos.</p>
+        <span class="etiqueta">Técnica</span>
+      </div>
+    </article>
+
+    <article class="pin" data-cat="vibras">
+      <div class="arte arte-retro alto-2" role="img" aria-label="Sol con franjas sobre un cielo rosa y morado"></div>
+      <div class="info">
+        <h2>Atardecer retro</h2>
+        <p>Sol rayado, rosas y morados de los años ochenta.</p>
+        <span class="etiqueta">Vibra</span>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>Proyecto escolar de diseño web. Las imágenes son ilustraciones hechas solo con CSS.</p>
+  </footer>
+
+</body>
+</html>
